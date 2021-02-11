@@ -103,17 +103,17 @@ function initBrowserSync() {
       `${paths.css}/*.css`,
       `${paths.js}/*.js`,
       `${paths.templates}/*.html`
-    ],
-    //   {
+    ], {
+    server: `${paths.app}`
     //   // https://www.browsersync.io/docs/options/#option-proxy
     //   proxy: 'localhost:8000'
-    // }
+  }
   )
 }
 
 // Watch
 function watchPaths() {
-  watch(`${paths.sass}/*.scss`, styles)
+  watch(`${paths.sass}/**/*.scss`, styles)
   watch(`${paths.templates}/**/*.html`).on("change", reload)
   watch([`${paths.js}/*.js`, `!${paths.js}/*.min.js`], scripts).on("change", reload)
 }
