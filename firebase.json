@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "onepage",
+    "public": "multi-page",
     "ignore": [
       "firebase.json",
       "**/.*",

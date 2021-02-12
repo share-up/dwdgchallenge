@@ -1,5 +1,5 @@
 {
-  "name": "onepage",
+  "name": "multi-page",
   "version": "0.1.0",
   "devDependencies": {
     "autoprefixer": "^9.4.7",
