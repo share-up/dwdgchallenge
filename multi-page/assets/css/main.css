@@ -2177,6 +2177,10 @@ footer {
   border-color: #4867aa;
   color: #4867aa; }
 
+.social-icons-footer .instagram a:hover {
+  border-color: #E1306C;
+  color: #E1306C; }
+
 .social-icons-footer .twitter a:hover {
   border-color: #1da1f2;
   color: #1da1f2; }
@@ -2188,6 +2192,10 @@ footer {
 .social-icons-footer .google a:hover {
   border-color: #ea4335;
   color: #ea4335; }
+
+.social-icons-footer .youtube a:hover {
+  border-color: #FF0000;
+  color: #FF0000; }
 
 .social-icons-footer .pinterest a:hover {
   border-color: #bd081c;

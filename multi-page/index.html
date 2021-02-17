@@ -10,7 +10,7 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-  <!-- Icon -->
+  <!-- Icons -->
   <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
   <!-- Slicknav -->
   <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
@@ -24,6 +24,9 @@
   <link rel="stylesheet" type="text/css" href="assets/css/colors/share-green.css">
   <!-- Responsive Style -->
   <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+ 
+  <!-- Tab Icon -->
+  <link rel="icon" href="assets/img/dwdg-icon.png">
 
 </head>
 
@@ -36,7 +39,7 @@
       <div class="container">
         <div class="theme-header clearfix">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a>
+          <a href="index.html" class="navbar-brand"><img id="nav-logo" src="assets/img/logo.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="lni-menu"></i>
@@ -106,7 +109,7 @@
           </div>
         </div>
       </div>
-      <div class="mobile-menu" data-logo="assets/img/logo.png"></div>
+      <div class="mobile-menu" data-logo="assets/img/logo-dark.png"></div>
     </nav>
     <!-- Navbar End -->
 
@@ -117,14 +120,10 @@
         <div class="row justify-content-center">
           <div class="col-lg-9 col-sm-12">
             <div class="contents text-center">
-              <div class="icon">
-                <i class="lni-mic"></i>
-              </div>
-              <p class="banner-info">15, March 2021 - ShARE-UP </p>
-              <h2 class="head-title">Do Well Do Good Challenge</h2>
-              <p class="banner-desc">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, nobis nesciunt atque perferendis,
-                ipsa doloremque deserunt cum qui.</p>
+              <img class="img-fluid mb-3" src="assets/img/logo-full.png" style="max-height: 250px" alt="">
+              <p class="banner-info"><a href="https://share-up.pt" target="_blank">by ShARE-UP</a></p>
+              <h2 class="head-title">Growing students for social impact</h2>
+              <p class="banner-desc">March 22 to April 1, 2021 | Apply until March 14</p>
               <div class="banner-btn">
                 <a href="#" class="btn btn-common">Apply Here</a>
               </div>
@@ -168,7 +167,7 @@
             <div>
               <div class="about-text">
                 <h2>About The Conference</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod ncididunt ametfh consectetur
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod ncididunt ametfh consectetur
                   dolore magna aliqua. Ut enim ad minim veniam dolor sitame magnaelit ate consectetur adipisicing. Lorem
                   ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod.</p>
               </div>
@@ -250,7 +249,7 @@
       <div class="row">
         <div class="col-12">
           <div class="section-title-header text-center">
-            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Why You Join?</h2>
+            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Why To Participate?</h2>
             <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius
               illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
           </div>
@@ -334,8 +333,8 @@
               <i class="lni-mic"></i>
             </div>
             <div class="counter-content">
-              <div class="counterUp">43</div>
-              <p>Speakers</p>
+              <div class="counterUp">4</div>
+              <p>Workshops</p>
             </div>
           </div>
         </div>
@@ -346,8 +345,8 @@
               <i class="lni-bulb"></i>
             </div>
             <div class="counter-content">
-              <div class="counterUp">800</div>
-              <p>Participate</p>
+              <div class="counterUp">60</div>
+              <p>Participants</p>
             </div>
           </div>
         </div>
@@ -358,8 +357,8 @@
               <i class="lni-briefcase"></i>
             </div>
             <div class="counter-content">
-              <div class="counterUp">24</div>
-              <p>Sponsors</p>
+              <div class="counterUp">15</div>
+              <p>Mentors</p>
             </div>
           </div>
         </div>
@@ -370,8 +369,8 @@
               <i class="lni-coffee-cup"></i>
             </div>
             <div class="counter-content">
-              <div class="counterUp">34</div>
-              <p>Sessions</p>
+              <div class="counterUp">5</div>
+              <p>Networking Sessions</p>
             </div>
           </div>
         </div>
@@ -1540,15 +1539,15 @@
   <section id="contact-text">
     <div class="container">
       <div class="row contact-wrapper">
-        <div class="col-lg-4 col-md-5 col-xs-12">
+<!--         <div class="col-lg-4 col-md-5 col-xs-12">
           <ul>
             <li>
               <i class="lni-home"></i>
             </li>
             <li><span>Cesare Rosaroll, 118 80139 Eventine</li>
           </ul>
-        </div>
-        <div class="col-lg-4 col-md-3 col-xs-12">
+        </div> -->
+        <div class="col-lg-6 col-md-3 col-xs-12">
           <ul>
             <li>
               <i class="lni-phone"></i>
@@ -1556,12 +1555,12 @@
             <li><span>+789 123 456 79</span></li>
           </ul>
         </div>
-        <div class="col-lg-4 col-md-3 col-xs-12">
+        <div class="col-lg-6 col-md-3 col-xs-12">
           <ul>
             <li>
               <i class="lni-envelope"></i>
             </li>
-            <li><span>Support@example.com</span></li>
+            <li><span>dwdg.shareup@gmail.com</span></li>
           </ul>
         </div>
       </div>
@@ -1588,15 +1587,15 @@
           </div>
           <div class="social-icons-footer">
             <ul>
-              <li class="facebook"><a target="_blank" href="3"><i class="lni-facebook-filled"></i></a></li>
-              <li class="twitter"><a target="_blank" href="3"><i class="lni-twitter-filled"></i></a></li>
-              <li class="linkedin"><a target="_blank" href="3"><i class="lni-linkedin-original"></i></a></li>
-              <li class="google"><a target="_blank" href="3"><i class="lni-google"></i></a></li>
-              <li class="pinterest"><a target="_blank" href="3"><i class="lni-pinterest"></i></a></li>
-            </ul>
+              <li class="facebook"><a target="_blank" href="https://www.facebook.com/SHAREUniversityPorto"><i class="lni-facebook-filled"></i></a></li>
+              <li class="instagram"><a target="_blank" href="https://www.instagram.com/share_uporto/"><i class="lni-instagram-filled"></i></a></li>
+              <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/share-university-of-porto/"><i class="lni-linkedin-original"></i></a></li>
+              <li class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCdWPIG2WbMcMWFnJTughpbg"><i class="lni-youtube"></i></a></li>
+<!--               <li class="pinterest"><a target="_blank" href="3"><i class="lni-pinterest"></i></a></li>
+ -->            </ul>
           </div>
           <div class="site-info">
-            <p>Designed and Developed by <a href="http://uideck.com" rel="nofollow">UIdeck</a></p>
+            <p>Designed and Developed by <a href="http://uideck.com" rel="nofollow" target="_blank">UIdeck</a> | Adapted by <a href="https://linkedin.com/in/diogovalentepolonia" rel="nofollow" target="_blank">Diogo Valente Polónia</a></p>
           </div>
         </div>
       </div>
