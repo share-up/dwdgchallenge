@@ -282,6 +282,9 @@ a.back-to-top {
   a.back-to-top:hover, a.back-to-top:focus {
     text-decoration: none; }
 
+.text-share {
+  color: #00C680; }
+
 /* ==========================================================================
    Page Header
    ========================================================================== */
@@ -823,8 +826,8 @@ a.back-to-top {
     font-weight: 400;
     margin-top: 20px; }
   .about-content .about-text p {
-    margin-top: 20px;
-    margin-bottom: 20px; }
+    margin-top: 5px;
+    margin-bottom: 5px; }
   .about-content ul {
     margin-bottom: -8px; }
     .about-content ul li {
@@ -1018,21 +1021,21 @@ h1 {
       margin-bottom: 20px;
       font-weight: 700; }
 
-/* Sponsors Area */
-#sponsors {
+/* partners Area */
+#partners {
   background: url(../img/background/countdown.jpg) no-repeat center;
   background-attachment: scroll;
   background-size: auto auto;
   background-size: cover;
   background-attachment: fixed;
   position: relative; }
-  #sponsors .section-title-header .section-title {
+  #partners .section-title-header .section-title {
     color: #fff; }
-  #sponsors .section-title-header p {
+  #partners .section-title-header p {
     color: #fff; }
-  #sponsors .sponsors-logo a img {
+  #partners .partners-logo a img {
     margin: 30px; }
-  #sponsors .spnsors-logo:hover {
+  #partners .spnsors-logo:hover {
     border-color: transparent;
     -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2); }
@@ -1419,14 +1422,17 @@ h1 {
           letter-spacing: 0px;
           outline: 0 !important; }
           .team-item .overlay-social-icon .social-icons li a i {
-            font-size: 20px;
+            font-size: 60px;
             color: #fff;
-            width: 60px;
-            height: 60px;
+            width: 120px;
+            height: 120px;
+            /* width: 60px;
+					    height: 60px; */
             background: #ff4a67;
             display: block;
             border-radius: 0px;
-            line-height: 60px;
+            line-height: 120px;
+            /* line-height: 60px; */
             transition: all 0.3s ease-in-out 0s;
             -moz-transition: all 0.3s ease-in-out 0s;
             -webkit-transition: all 0.3s ease-in-out 0s;
@@ -1438,6 +1444,10 @@ h1 {
         .team-item .overlay-social-icon .social-icons li .lni-twitter-filled {
           background: rgba(29, 161, 242, 0.7); }
           .team-item .overlay-social-icon .social-icons li .lni-twitter-filled:hover {
+            background: #1da1f2; }
+        .team-item .overlay-social-icon .social-icons li .lni-linkedin-filled {
+          background: rgba(29, 161, 242, 0.7); }
+          .team-item .overlay-social-icon .social-icons li .lni-linkedin-filled:hover {
             background: #1da1f2; }
         .team-item .overlay-social-icon .social-icons li .lni-google-plus {
           background: rgba(234, 67, 53, 0.7); }

@@ -90,6 +90,27 @@
         return false;
       });
 
+    /*====================================
+    submit
+    ======================================*/
+    // listen for  form submit
+    document.getElementById('contactForm').addEventListener('submit',submitForm);
+
+    function submitForm(e){
+        e.preventDefault();
+
+        // Get Values
+        var name = getInputVal('name');
+        var email = getInputVal('email');
+        var subject = getInputVal('subject');
+        var message = getInputVal('message');
+    }
+
+    //Funciton to get form values
+    function getInputVal(id){
+      return document.getElementById(id).value;
+    }
+
   });      
 
 }(jQuery));

@@ -59,14 +59,17 @@
 				    letter-spacing: 0px;
 				    outline: 0 !important;
 				    i{
-				    	font-size: 20px;
+				    	font-size: 60px;
 					    color: #fff;
-					    width: 60px;
-					    height: 60px;
+					    width: 120px;
+					    height: 120px;
+						/* width: 60px;
+					    height: 60px; */
 					    background: $preset;
 					    display: block;
 					    border-radius: 0px;
-					    line-height: 60px;
+					    line-height: 120px;
+						/* line-height: 60px; */
 					    transition: all 0.3s ease-in-out 0s;
 					    -moz-transition: all 0.3s ease-in-out 0s;
 					    -webkit-transition: all 0.3s ease-in-out 0s;
@@ -80,6 +83,12 @@
 			    	}
 			    }
 			    .lni-twitter-filled{
+			    	background: rgba(29, 161, 242, 0.7);
+			    	&:hover{
+						background: #1da1f2;
+			    	}
+			    }
+				.lni-linkedin-filled{
 			    	background: rgba(29, 161, 242, 0.7);
 			    	&:hover{
 						background: #1da1f2;
