@@ -1188,6 +1188,13 @@ h1 {
     .schedule .card-body .location span {
       color: #ff4a67;
       margin-right: 5px; }
+  .schedule .card-body .images-box {
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-bottom: 20px; }
+    .schedule .card-body .images-box img {
+      border-radius: 50%; }
 
 .accordion .card {
   border-radius: 0px;
