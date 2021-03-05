@@ -259,10 +259,10 @@
 	position: relative;
     .section-title-header{
     	.section-title{
-    		color: #fff;
+    		color: #212121;
     	}
     	p{
-    		color: #fff;
+    		color: #212121;
     	}
     }
 	.partners-logo{
@@ -270,11 +270,13 @@
 			img{
 				margin: 30px;
 			}
+			/* img:hover{
+				box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+			} */
 		}
 	}
-	.spnsors-logo:hover{
+	.partners-logo:hover{
 		border-color: transparent;
-		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
 	}
 }
 
