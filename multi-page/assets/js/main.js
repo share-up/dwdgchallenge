@@ -15,7 +15,7 @@
             document.getElementById("nav-logo").src="assets/img/logo-dark.png"
         } else {
             $('.scrolling-navbar').removeClass('top-nav-collapse');
-            document.getElementById("nav-logo").src="assets/img/logo.png"
+            document.getElementById("nav-logo").src="assets/img/logo_branco.png"
         }
     });
 

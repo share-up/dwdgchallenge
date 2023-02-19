@@ -678,6 +678,7 @@ a.back-to-top:focus {
 .navbar-brand img {
 	width: 8%;
 	height: auto;
+	margin-top: 15px;
 }
 
 .top-nav-collapse {
