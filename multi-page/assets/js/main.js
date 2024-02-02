@@ -12,10 +12,11 @@
     $(window).on('scroll', function() {
         if ($(window).scrollTop() > 200) {
             $('.scrolling-navbar').addClass('top-nav-collapse');
-            document.getElementById("nav-logo").src="assets/img/logo_dark_2023.png"
+            /* logo dark -> ambiente claro e vice-versa */
+            document.getElementById("nav-logo").src="assets/img/Logo_DWDG_dark24.png"
         } else {
             $('.scrolling-navbar').removeClass('top-nav-collapse');
-            document.getElementById("nav-logo").src="assets/img/logo_branco.png"
+            document.getElementById("nav-logo").src="assets/img/Logo-DWDG_Branco24.png"
         }
     });
 
