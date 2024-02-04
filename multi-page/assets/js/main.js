@@ -16,7 +16,7 @@
             document.getElementById("nav-logo").src="assets/img/Logo_DWDG_dark24.png"
         } else {
             $('.scrolling-navbar').removeClass('top-nav-collapse');
-            document.getElementById("nav-logo").src="assets/img/Logo-DWDG_Branco24.png"
+            document.getElementById("nav-logo").src="assets/img/DWDG24b&v.png"
         }
     });
 
