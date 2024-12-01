@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+}
+  
+.background {
+  background-image: url('../img/background/landingPage.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 55em;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+}
+
+/* Retangulo Countdown */
+.info-rectangle {
+    background-color: rgba(1, 48, 31, 0.6);
+    color: #F9F6EE;
+    text-align: center;
+    padding: 7em 7em 3em;
+    border-radius: 10px;
+    width: 60%;
+    position: relative; 
+}
+
+.info-rectangle h1 {
+  font-size: 3rem;
+  margin-top: -1.5em;
+  margin-bottom: 10px;
+}
+
+.info-rectangle h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+
+.info-rectangle p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+/* Botão */
+.apply-button {
+  background-color: #F9F6EE;
+  color: #01301F;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+  background-color: #00C782 ;
+  color: #F9F6EE;
+}
+
+/* Contador */
+#countdown {
+    position: absolute;
+    left: 50%; 
+    margin-top: 20em;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    background-color: #F9F6EE;
+    padding: 1em 2em;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 30%;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center;
+}
+
+.number {
+  display: flex;
+  align-items: baseline;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #01301F;
+}
+
+.label {
+  margin-top: 10px; 
+  font-size: 1rem;
+  color: #01301F;
+  text-align: center;
+}
+
+/* Secção About */
+.about-section{
+  background-color:#F9F6EE;
+  color: #01301F;
+  text-align: left;
+  padding: 50px 20px;
+}
