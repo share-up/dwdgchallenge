@@ -93,7 +93,23 @@
     </div>    
     </div>
 
+    <!-- Video Section -->
+    <div class="video-section">
+      <h1>Enquanto preparamos o teaser para ti, aqui estão alguns vídeos das edições anteriores</h1>
+      <h3>Clica no video para começar</h3>
+      <div class="video-carousel">
+        <button class="carousel-button left" onclick="previousVideo()">&#8249;</button>
+        <div class="video-container" id="videoCarousel">
+          <video src="assets/video/dwdgtestv12.mp4" loop></video>
+          <video src="assets/video/Do_Well_Do_Good_Final_2.mp4" loop></video>
+          <video src="assets/video/teaser2324.mp4"  loop></video>
+        </div>
+        <button class="carousel-button right" onclick="nextVideo()">&#8250;</button>
+      </div>
+    </div>    
+
   <!-- Link JS -->
+  <script src="assets/js/videoCarousel.js"></script>
   <script src="assets/js/scrollEffect.js"></script>
   <script src="assets/js/countdown.js"></script>
 </body>

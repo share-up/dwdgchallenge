@@ -4,7 +4,7 @@
   border-radius: 10px;
   margin: 2em;
   width: 90%;
-  color: white;
+  color: #F9F6EE;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -23,7 +23,7 @@
 }
 
 .green-navbar ul li a {
-  color: white;
+  color: #F9F6EE;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -72,3 +72,51 @@
   height: auto;
   align-self: stretch; 
 }
+
+.video-section {
+    margin: 50px 0;
+    text-align: center;
+  }
+  
+  .video-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 2500px;
+    margin: 0 auto;
+    overflow: hidden; 
+  }
+  
+  .video-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .video-container video {
+    flex: 0 0 100%;
+    height: auto; 
+    object-fit: contain;
+    max-height: 1000px; 
+    background: black; 
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+  }
+  
+  .carousel-button.left {
+    left: 10px;
+  }
+  
+  .carousel-button.right {
+    right: 10px;
+  }
+  

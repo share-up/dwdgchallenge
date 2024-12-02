@@ -8,7 +8,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 55em;
+  height: 85em;
   display: flex; 
   justify-content: center;
   align-items: center; 
@@ -99,8 +99,27 @@ body {
 
 /* Secção About */
 .about-section{
-  background-color:#F9F6EE;
   color: #01301F;
   text-align: left;
   padding: 50px 20px;
 }
+
+.about-section h1{
+    font-size: 3rem;
+}
+
+.about-section h3{
+   font-size: 1.5em;
+}
+
+.video-section h1 {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 3rem;
+}
+
+.video-section h3 {
+    font-size: 1.5em;
+    text-align: left;
+    padding: 0px 30px;
+  }
