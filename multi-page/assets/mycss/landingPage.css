@@ -8,7 +8,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 85em;
+  height: 60em;
   display: flex; 
   justify-content: center;
   align-items: center; 
@@ -99,27 +99,41 @@ body {
 
 /* Secção About */
 .about-section{
+
   color: #01301F;
   text-align: left;
   padding: 50px 20px;
 }
 
 .about-section h1{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .about-section h3{
-   font-size: 1.5em;
+   font-size: 1em;
+}
+
+.video-section{
+  padding: 50px 20px;
+  color: #F9F6EE;
 }
 
 .video-section h1 {
     text-align: left;
     padding-left: 20px;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .video-section h3 {
-    font-size: 1.5em;
+    padding-left: 20px;
+    font-size: 1em;
     text-align: left;
-    padding: 0px 30px;
+    margin-bottom: 50px;
+  }
+
+  .video-background {
+    background-image: url('../video/meantine_video_bck.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
