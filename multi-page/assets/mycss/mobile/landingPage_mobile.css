@@ -1,0 +1,202 @@
+@media (max-width: 768px) {
+    /* Corpo e Background */
+    body {
+      font-size: 14px;
+    }
+  
+    .background {
+        background-position: center;
+        background-repeat: no-repeat; 
+        height: 35em; 
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+        padding: 2em;
+        background-attachment: scroll;
+      }
+  
+    /* Retângulo Countdown */
+    .info-rectangle {
+      padding: 2em 1.5em;
+      width: 90%;
+      margin-top: 1em;
+    }
+  
+    .info-rectangle h1 {
+      font-size: 1.8rem;
+      margin-top: -0.5em;
+    }
+  
+    .info-rectangle h3 {
+      font-size: 1.2rem;
+    }
+  
+    .info-rectangle p {
+      font-size: 1rem;
+    }
+  
+    #countdown {
+      padding: 0em;
+      width: 70%;
+      margin-bottom: -4em;
+    }
+  
+    .countdown-item {
+      margin: 1em 0;
+    }
+  
+    .number {
+      font-size: 1.5rem;
+    }
+  
+    .label {
+      font-size: 0.9rem;
+    }
+  
+    /* Botão */
+    .apply-button {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  
+    /* Secção About */
+    .about-section {
+      padding: 20px 10px;
+      text-align: left;
+    }
+  
+    .about-section h1 {
+      font-size: 1.8rem;
+    }
+  
+    .about-section h3 {
+      font-size: 1rem;
+    }
+  
+    /* Video Section */
+    .video-section {
+      padding: 20px 10px;
+    }
+  
+    .video-section h1,
+    .video-section h3 {
+      text-align: left;
+      font-size: 1.2rem;
+    }
+  
+    .video-carousel {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    /* Como Funciona */
+    .howto-section {
+      padding: 20px 10px;
+    }
+  
+    .howto-section h1 {
+      font-size: 1.8rem;
+    }
+  
+    .howto-section h3 {
+      font-size: 1rem;
+      text-align: left;
+    }
+    /* Secção "Como funciona" */
+    .howto-section {
+    padding: 20px;
+    overflow: hidden; /* Esconde overflow em eixos */
+  }
+  
+  .howto-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .howto-section h3 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .steps-section {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os elementos */
+    overflow-x: auto; /* Ativa scroll horizontal */
+    padding: 10px;
+    scroll-behavior: smooth; /* Scroll suave */
+  }
+  
+  .steps-section::-webkit-scrollbar {
+    display: none; /* Esconde barra de scroll no Chrome */
+  }
+  
+  .step {
+    min-width: 300px; /* Largura mínima de cada bloco */
+    flex: 0 0 auto; /* Impede os elementos de encolher */
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 10px;
+    border: 1px solid #01301F;
+    box-shadow: 0 10px 20px rgba(1, 48, 31, 0.2); 
+
+  }
+  
+  .step img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .step h3 {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #01301F;
+  }
+  
+  .step:hover {
+    transform:none;
+    padding: 0.5em;
+    transition: none; 
+    box-shadow: 0 10px 20px rgba(1, 48, 31, 0.2); 
+  }
+
+  /* footer */
+.footer-section {
+    padding: 2em;
+    background-image: none;
+    background-color: rgba(0, 19, 12, 0.9)!important;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0px;
+  }
+
+  .three-columns {
+    flex-direction: row; 
+    justify-content: center;
+  }
+
+  .footer-credits {
+    flex: 1;
+    min-width: 200px;
+    text-align: left; 
+  }
+
+  .social-links {
+    margin-top: 20px;
+    width: 100%; 
+  }
+
+  .social-links ul {
+    justify-content: center; 
+  }
+}

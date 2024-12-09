@@ -1,0 +1,60 @@
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .green-navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+  }
+
+  .hamburger-menu {
+    display: block;
+    order: 2; /* Move o ícone para o lado oposto do logótipo */
+  }
+
+  .green-navbar ul {
+    display: none; /* Esconde os links no início */
+    width: 100%;
+    background-color: #01301F;;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .green-navbar ul li {
+    padding: 1em 0;
+    width: 100%;
+  }
+
+  .green-navbar ul li a {
+    font-size: 1rem;
+  }
+
+  .green-navbar ul.visible {
+    display: flex;
+    border-radius: 10px;
+    gap: 1em;
+  }
+  .video-section {
+    margin: 20px 0;
+  }
+
+  .carousel-button {
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+
+  .two-columns {
+    flex-direction: column; 
+    gap: 10px;
+  }
+
+  .divider {
+    height: 4px;
+    width: 75%; /* Define uma largura fixa, por exemplo, 100% do contêiner pai */
+    background-color: #B7E6CA;
+    align-self: center;
+  }
+  
+}
