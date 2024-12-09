@@ -8,7 +8,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 50em;
+  height: 45em;
   display: flex; 
   justify-content: center;
   align-items: center; 
@@ -99,7 +99,6 @@ body {
 
 /* Secção About */
 .about-section{
-
   color: #01301F;
   text-align: left;
   padding: 50px 20px;
@@ -130,7 +129,7 @@ body {
   margin-bottom: 50px;
 }
 .video-background {
-  background-image: url('../video/meantine_video_bck.png');
+  background-image: url('../img/background/video_bck.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -185,3 +184,107 @@ body {
   box-shadow: 0 10px 20px rgba(1, 48, 31, 0.2); 
 }
   
+/* footer */
+.footer-section {
+  background-image: url(../img/background/footer_background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #F9F6EE;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.three-columns {
+  margin-top: -1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;;
+  text-align: left;
+}
+
+.logo-column, .contact-column, .icons-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.logo-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  max-width: 150px;
+}
+
+.contact-column {
+  text-align: center;
+}
+
+.footer-contact-info p {
+  margin: 5px 0;
+}
+
+.footer-contact-info a {
+  color: #F9F6EE;
+  text-decoration: none;
+}
+
+.footer-contact-info a:hover {
+  text-decoration: underline;
+}
+
+.icons-column {
+  text-align: center;
+}
+
+.social-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.social-links a {
+  font-size: 1.8em;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #00C782;
+}
+
+.footer-credits {
+  font-size: 0.9em;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.footer-credits a {
+  color: #00C782;
+  text-decoration: none;
+}
+
+.footer-credits a:hover {
+  text-decoration: underline;
+}

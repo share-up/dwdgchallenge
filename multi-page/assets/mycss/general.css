@@ -10,7 +10,7 @@
   align-items: center;
   padding: 1em 2em;
   z-index: 2;
-  background-color: rgba(1, 48, 31, 0.7);
+  background-color: rgba(1, 48, 31, 0.9);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -67,7 +67,7 @@
 
 /* Divisor */
 .divider {
-  width: 5px;
+  width: 2px;
   background-color: #B7E6CA; 
   height: auto;
   align-self: stretch; 
