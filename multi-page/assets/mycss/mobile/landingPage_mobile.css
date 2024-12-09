@@ -1,0 +1,155 @@
+/* Base Mobile Adjustments */
+@media (max-width: 768px) {
+    /* Corpo e Background */
+    body {
+      font-size: 14px;
+    }
+  
+    .background {
+      height: auto;
+      padding: 2em;
+      background-attachment: scroll; /* Remove fixação do fundo em mobile */
+    }
+  
+    /* Retângulo Countdown */
+    .info-rectangle {
+      padding: 2em 1.5em;
+      width: 90%;
+      margin-top: 1em;
+    }
+  
+    .info-rectangle h1 {
+      font-size: 1.8rem;
+      margin-top: -1em;
+    }
+  
+    .info-rectangle h3 {
+      font-size: 1.2rem;
+    }
+  
+    .info-rectangle p {
+      font-size: 1rem;
+    }
+  
+    #countdown {
+      flex-direction: column;
+      padding: 1em;
+      width: 90%;
+      margin-top: 1em;
+    }
+  
+    .countdown-item {
+      margin: 1em 0;
+    }
+  
+    .number {
+      font-size: 1.5rem;
+    }
+  
+    .label {
+      font-size: 0.9rem;
+    }
+  
+    /* Botão */
+    .apply-button {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  
+    /* Secção About */
+    .about-section {
+      padding: 20px 10px;
+      text-align: center;
+    }
+  
+    .about-section h1 {
+      font-size: 1.8rem;
+    }
+  
+    .about-section h3 {
+      font-size: 1rem;
+    }
+  
+    /* Video Section */
+    .video-section {
+      padding: 20px 10px;
+    }
+  
+    .video-section h1,
+    .video-section h3 {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  
+    .video-carousel {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    /* Como Funciona */
+    .howto-section {
+      padding: 20px 10px;
+    }
+  
+    .howto-section h1 {
+      font-size: 1.8rem;
+    }
+  
+    .howto-section h3 {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .steps-section {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .step {
+      width: 90%;
+    }
+  
+    .step img {
+      width: 100%;
+    }
+  
+    /* Footer */
+    .footer-section {
+      padding: 1em;
+    }
+  
+    .footer-row {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .three-columns {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .logo-column, 
+    .contact-column, 
+    .icons-column {
+      min-width: auto;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .footer-logo {
+      max-width: 100px;
+    }
+  
+    .footer-contact-info p {
+      font-size: 0.8em;
+    }
+  
+    .social-links ul {
+      gap: 10px;
+    }
+  
+    .social-links a {
+      font-size: 1.5em;
+    }
+  }
+  

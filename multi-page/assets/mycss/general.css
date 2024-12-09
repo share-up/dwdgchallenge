@@ -1,4 +1,8 @@
 /* NAVBAR */
+.hamburger-menu {
+  display:none;
+}
+
 .green-navbar {
   position: fixed;
   border-radius: 10px;
