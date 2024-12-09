@@ -14,7 +14,7 @@
   .green-navbar ul {
     display: none; /* Esconde os links no início */
     width: 100%;
-    background-color: rgba(1, 48, 31, 0.9);
+    background-color: #01301F;;
     position: absolute;
     top: 100%;
     left: 0;
@@ -51,6 +51,10 @@
   }
 
   .divider {
-    display: none; 
+    height: 4px;
+    width: 75%; /* Define uma largura fixa, por exemplo, 100% do contêiner pai */
+    background-color: #B7E6CA;
+    align-self: center;
   }
+  
 }
