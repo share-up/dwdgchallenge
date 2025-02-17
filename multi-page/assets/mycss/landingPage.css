@@ -112,29 +112,6 @@ body {
    font-size: 1em;
 }
 
-.video-section{
-  padding: 50px 20px;
-  color: #F9F6EE;
-}
-
-.video-section h1 {
-    text-align: left;
-    font-size: 2rem;
-}
-
-.video-section h3 {
-  padding-left: 10px;
-  font-size: 1em;
-  text-align: left;
-  margin-bottom: 50px;
-}
-.video-background {
-  background-image: url('../img/background/video_bck.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
 /* Secção ComoFunciona */
 .howto-section{
   color: #01301F;
@@ -175,13 +152,6 @@ body {
   margin-top: 10px;
   font-size: 1.1rem;
   color: #01301F;
-}
-
-.step:hover {
-  transform: scale(1.05);
-  padding: 0.5em;
-  transition: transform 0.75s ease; 
-  box-shadow: 0 10px 20px rgba(1, 48, 31, 0.2); 
 }
   
 /* footer */

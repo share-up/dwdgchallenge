@@ -81,48 +81,41 @@
     </div>    
   </div>
 
-  <!-- Secção ABOUT -->
-  <div class="about-section">
-    <h1>Sobre o Desafio</h1>
-    <div class="two-columns">
-      <div class="column column-large">
+<!-- Secção ABOUT -->
+<div class="about-section">
+  <h1>Sobre o Desafio</h1>
+  <div class="two-columns">
+    <!-- Coluna do Texto -->
+    <div class="column column-large content-center">
+      <div class="text-content">
         <h3>
           O Do Well Do Good Challenge é uma competição de estudo de caso que reúne os melhores estudantes para criar soluções duradouras para problemas com impacto social. 
           Nesta edição, desafiamos-te a desenvolver soluções criativas para um problema relacionado e fornecido pela Finsa.
           Todos os problemas e dados serão fornecidos pela Finsa e os vencedores terão a oportunidade de desenvolver ainda mais a sua solução em parceria com o mesmo e a ShARE-UP.
         </h3>
-      </div>
-      <div class="divider"></div>
-      <div class="column column-small">
         <h3>
-          Os vencedores terão a oportunidade de desenvolver ainda mais a sua solução para o caso em parceria com a ShARE-UP e a Finsa.</h3>
-          <ul>
-            <li>Desafia 2 ou 3 amigos a juntarem-se a ti nesta jornada.</li>
-            <li>Acede a 4 níveis de formações e trabalha com profissionais de excelência.</li>
-            <li>Ganha a oportunidade de implementar a tua solução no mundo real.</li>
-            <li>Aprende a fazer bem e a fazer o bem. Torna-te um agente de mudança!</li>
-          </ul>
+          Os vencedores terão a oportunidade de desenvolver ainda mais a sua solução para o caso em parceria com a ShARE-UP e a Finsa.
         </h3>
+        <ul>
+          <li>Desafia 2 ou 3 amigos a juntarem-se a ti nesta jornada.</li>
+          <li>Acede a 4 níveis de formações e trabalha com profissionais de excelência.</li>
+          <li>Ganha a oportunidade de implementar a tua solução no mundo real.</li>
+          <li>Aprende a fazer bem e a fazer o bem. Torna-te um agente de mudança!</li>
+        </ul>
       </div>
-    </div>    
     </div>
 
-    <!-- Secção temporária para o video -->
-    <div class="video-background">
-    <div class="video-section">
-      <h1>Enquanto preparamos o teaser para ti, aqui estão alguns vídeos das edições anteriores</h1>
-      <h3>Clica no video para começar</h3>
-      <div class="video-carousel">
-        <button class="carousel-button left" onclick="previousVideo()">&#8249;</button>
-        <div class="video-container" id="videoCarousel">
-          <video src="assets/video/dwdgtestv12.mp4" loop></video>
-          <video src="assets/video/Do_Well_Do_Good_Final_2.mp4" loop></video>
-          <video src="assets/video/teaser2324.mp4"  loop></video>
-        </div>
-        <button class="carousel-button right" onclick="nextVideo()">&#8250;</button>
+    <div class="divider"></div>
+
+    <!-- Coluna do Vídeo -->
+    <div class="column column-small video-center">
+      <div class="teaser">
+        <video id="teaser-video" src="assets/video/teaser25.mp4" autoplay loop muted></video>
       </div>
-    </div>   
-    </div> 
+    </div>
+  </div>
+</div>
+
 
     <!-- Secção Como funciona -->
     <div class="howto-section">
@@ -198,6 +191,31 @@
         </div>
   </div>
 </footer>
+
+<script>
+  const video = document.getElementById('teaser-video');
+
+  // Inverter play/pause ao clicar no vídeo
+  video.addEventListener('click', () => {
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+    togglePlayIcon();
+  });
+
+  // Garante que o ícone desaparece se o vídeo estiver a reproduzir (pode ser necessário em certos navegadores)
+  video.addEventListener('play', togglePlayIcon);
+  video.addEventListener('pause', togglePlayIcon);
+
+  // Garantir que o ícone desaparece logo após o autoplay
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      togglePlayIcon();
+    }, 500);
+  });
+</script>
 
 
   <!-- Link JS -->
