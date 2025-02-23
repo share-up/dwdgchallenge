@@ -131,13 +131,13 @@
   }
   
   .step {
-    min-width: 300px; /* Largura mínima de cada bloco */
-    flex: 0 0 auto; /* Impede os elementos de encolher */
+    background-color: #01301F;
+    color: #F9F6EE;
+    min-width: 23em;
+    flex: 0 0 auto; 
     text-align: center;
     padding: 0.5em;
     border-radius: 10px;
-    border: 1px solid #01301F;
-    box-shadow: 0 10px 20px rgba(1, 48, 31, 0.2); 
 
   }
   
@@ -147,11 +147,12 @@
   }
   
   .step h3 {
+    text-align: center;
     margin-top: 10px;
-    font-size: 1.1rem;
-    color: #01301F;
-  }
-  
+    font-size: 1.2rem;
+    color: #F9F6EE;
+}
+
   .step:hover {
     transform:none;
     padding: 0.5em;
