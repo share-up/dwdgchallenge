@@ -58,5 +58,8 @@
     background-color: #B7E6CA;
     align-self: left;
   }
+  .partner-text{
+    display: none;
+  }
   
 }
