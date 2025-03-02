@@ -1,3 +1,17 @@
+body{
+  background-image: url('../img/background/landingPage.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body h1{
+  font-size: 3rem;
+  margin-top: 6em !important;
+  margin-bottom: 10px;
+  color: #F9F6EE;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -6,7 +20,7 @@
 }
 .polaroid {
     width: 200px;
-    background: white;
+    background: #F9F6EE;
     padding: 10px;
     text-align: center;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
