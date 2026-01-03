@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DWDG Challenge 2025</title>
+  <!-- Link CSS -->
+  <link rel="icon" href="assets/img/logos/simboloSite.png">
+  <link rel="stylesheet" href="assets/mycss/landingPage.css">
+  <link rel="stylesheet" href="assets/mycss/general.css">
+  <link rel="stylesheet" href="assets/mycss/mobile/general_mobile.css">
+  <link rel="stylesheet" href="assets/mycss/mobile/landingPage_mobile.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head> 
+
+<body>
+  <!-- Navbar -->
+  <nav class="green-navbar">
+    <!-- Logótipo -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/img/logos/Logo_DM.png" alt="Logo DWDG" class="logo-img" />
+      </a>
+    </div>
+
+    <!-- Ícone de Hambúrguer -->
+    <div class="hamburger-menu">
+      <i class="fas fa-bars" id="hamburger-icon"></i>
+    </div>
+
+    <!-- Links de Navegação -->
+    <ul id="navbar-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="mentors.html">MENTORES</a></li>
+      <li><a href="comingsoon.html">HORÁRIOS</a></li>
+      <li><a href="comingsoon.html">JÚRI</a></li>
+      <li><a href="comingsoon.html">PARCEIROS</a></li>
+      <li><a href="https://share-up.pt" target="_blank">ShARE-UP</a></li>
+    </ul>
+  </nav>
+
+  
+
+  <div class="background">
+    <div class="info-rectangle">
+      <h1>Growing students for social impact</h1>
+      <h3>De 15 a 16 de março de 2025 | Candidaturas até 6 de março</h3>  
+      <button class="apply-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfsxT6h2aqXFW06xjtsI-Yng10hFajZjIGdGxlYPNDWvh-NZQ/viewform', '_blank');">
+        Candidata-te
+      </button>
+      <p>Tens até:</p>
+      <br>
+      </div>
+      <div id="countdown">
+        <div class="countdown-item">
+            <div class="number">
+                <span id="days"></span> 
+            </div>
+            <p class="label">Dias</p>
+        </div>
+        <div class="countdown-item">
+            <div class="number">
+                <span id="hours"></span>
+            </div>
+            <p class="label">Horas</p>
+        </div>
+        <div class="countdown-item">
+            <div class="number">
+                <span id="minutes"></span>
+            </div>
+            <p class="label">Minutos</p>
+        </div>
+        <div class="countdown-item">
+            <div class="number">
+                <span id="seconds"></span>
+            </div>
+            <p class="label">Segundos</p>
+        </div>
+    </div>    
+  </div>
+
+<!-- Secção ABOUT -->
+<div class="about-section">
+  <h1>Sobre o Desafio</h1>
+  <div class="two-columns">
+    <!-- Coluna do Texto -->
+    <div class="column column-large content-center">
+      <div class="text-content">
+        <h3>
+          O Do Well Do Good Challenge é uma competição de estudo de caso que reúne os melhores estudantes para criar soluções duradouras para problemas com impacto social. 
+          Nesta edição, desafiamos-te a desenvolver soluções criativas para um problema relacionado e fornecido pela Finsa.
+          Todos os problemas e dados serão fornecidos pela Finsa e os vencedores terão a oportunidade de desenvolver ainda mais a sua solução em parceria com o mesmo e a ShARE-UP.
+        </h3>
+        <h3>
+          Os vencedores terão a oportunidade de desenvolver ainda mais a sua solução para o caso em parceria com a ShARE-UP e a Finsa.
+        </h3>
+        <ul>
+          <li>Desafia 2 ou 3 amigos a juntarem-se a ti nesta jornada.</li>
+          <li>Acede a 3 formações e trabalha com profissionais de excelência.</li>
+          <li>Ganha a oportunidade de implementar a tua solução no mundo real.</li>
+          <li>Aprende a fazer bem e a fazer o bem. Torna-te um agente de mudança!</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Coluna do Vídeo -->
+    <div class="column column-small video-center">
+      <div class="teaser">
+        <video id="teaser-video" src="assets/video/teaser25.mp4" autoplay loop muted></video>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Secção Como funciona -->
+    <div class="howto-section">
+      <h1>Como funciona?</h1>
+        <h3>
+          O Do Well Do Good Challenge é mais do que uma case study competition. <br>
+          Com formações de excelência, 
+          mentoria personalizada e oportunidades únicas de networking, os participantes irão contribuir para um 
+          futuro mais sustentável. <br> Os vencedores terão a oportunidade de colaborar com a Finsa, transformando ideias 
+          inovadoras em ações concretas.
+          <br>
+          <br>
+          O concurso está dividido em 4 etapas:
+        </h3>
+        <div class="steps-section">
+          <div class="step">
+            <img src="assets/img/about/formações.png" alt="Formações" />
+            <h3>Formações <br> (Doing Well)</h3>
+            <p>Uma semana completa de formações online ministradas por consultores e profissionais de topo em temas relacionados com o caso prático</p>
+          </div>
+          <div class="step">
+            <img src="assets/img/about/resolução.png" alt="Resolução de Caso Prático" />
+            <h3>Resolução de Caso Prático <br>(Doing Good)</h3>
+            <p>Maratona de 36 horas para resolver o caso prático, com o apoio de um programa de mentoria especialmente desenhado para cada equipa</p>
+          </div>
+          <div class="step">
+            <img src="assets/img/about/final.png" alt="Apresentações Finais" />
+            <h3>Apresentações Finais</h3>
+            <p>Os nossos mentores selecionarão as 6 melhores equipas, que terão 12 horas para aprofundar e desenvolver a sua apresentação para o Júri Final</p>
+          </div>
+          <div class="step">
+            <img src="assets/img/about/solução.png" alt="Desenvolvimento da Solução" />
+            <h3>Desenvolvimento da Solução</h3>
+            <p>Os vencedores irão trabalhar em estreita colaboração com os nossos parceiros para desenvolver e implementar a sua solução</p>
+          </div>
+        </div>
+      </div>
+
+      <br><br><br>
+      <!-- Seção Main Partner com a FINSA -->
+      <div class="main-partner-section">
+        <h1>Main Partner</h1>
+        <div class="partner-content">
+          <img src="assets/img/logos/FINSA.png" alt="Logo Finsa" class="partner-logo">
+          <div class="partner-text">
+            <h3>A Finsa é a nossa main partner, reconhecida pela sua excelência no sector e pelo compromisso com a inovação e a responsabilidade social. Com um portfólio diversificado e uma forte presença no mercado, a Finsa tem vindo a apoiar projetos que promovem a sustentabilidade e a transformação digital.</h3>
+            <h3>O estudo de caso desta edição centra-se na supply chain e logística, abordando os desafios atuais e as oportunidades de inovação nesta área estratégica.</h3>
+          </div>
+        </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="opportunity">
+        <h1 style="text-align: center; color:#01301F;">Não Percas a tua Oportunidade!</h1>
+        <br>
+          <div class="buttons-container">
+            <button class="end-buttons" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfsxT6h2aqXFW06xjtsI-Yng10hFajZjIGdGxlYPNDWvh-NZQ/viewform', '_blank');">
+              Candidata-te
+            </button>
+            <button class="end-buttons" onclick="window.open('https://drive.google.com/file/d/1H-wLakCCWTGYQceePFmXU2TuIwEMrzwC/view', '_blank');">
+              Termos e Condições
+          </button>
+          
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+   <!-- Footer Section -->
+    <footer id="contact" class="footer-section">
+      <div class="footer-content">
+        <img src="assets/img/logos/sharelogo_dark.png" alt="Share Logo" class="footer-logo">
+        <div class="footer-row three-columns">
+
+          <!-- Coluna 1: Informações de Contacto-->
+            <div class="footer-credits">
+              <p><strong>Informações de Contacto</strong></p>
+              <p>Email: <a href="mailto:dwdg.shareup@gmail.com">dwdg.shareup@gmail.com</a></p>
+              <p>Telefone: <a href="tel:+351934452596">+351 934 452 596</a></p>
+            </div>
+
+          <!-- Coluna 2: Contacta-nos -->
+          <div class="footer-credits">
+            <p>Copyright © ShARE-UP 2024</p>
+            <p>Designed and Developed by <a href="https://www.linkedin.com/in/clarapbsousa" target="_blank">Clara Sousa</a></p>
+          </div>
+
+          <!-- Coluna 3: Ícones das redes sociais -->
+            <div class="social-links">
+              <ul>
+                <li class="facebook"><a target="_blank" href="https://www.facebook.com/SHAREUniversityPorto"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="instagram"><a target="_blank" href="https://www.instagram.com/dwdgchallenge/"><i class="fab fa-instagram"></i></a></li>
+                <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/share-university-of-porto/"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCdWPIG2WbMcMWFnJTughpbg"><i class="fab fa-youtube"></i></a></li>
+              </ul>
+          </div>
+        </div>
+  </div>
+</footer>
+
+<script>
+  const video = document.getElementById('teaser-video');
+
+  // Inverter play/pause ao clicar no vídeo
+  video.addEventListener('click', () => {
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+    togglePlayIcon();
+  });
+
+  // Garante que o ícone desaparece se o vídeo estiver a reproduzir (pode ser necessário em certos navegadores)
+  video.addEventListener('play', togglePlayIcon);
+  video.addEventListener('pause', togglePlayIcon);
+
+  // Garantir que o ícone desaparece logo após o autoplay
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      togglePlayIcon();
+    }, 500);
+  });
+</script>
+
+
+  <!-- Link JS -->
+  <script src="assets/js/videoCarousel.js"></script>
+  <script src="assets/js/scrollEffect.js"></script>
+  <script src="assets/js/countdown.js"></script>
+  <script src="assets/js/menuhamburger.js"></script>
+</body>
+
+</html>

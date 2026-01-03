@@ -1,13 +1,690 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    <script type="text/javascript">
-        window.location.href = "/multi-page";
-    </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DWDG Challenge 2026</title>
+  <!-- Link CSS -->
+  <link rel="icon" href="assets/img/logos/simboloSite.png">
+  <link rel="stylesheet" href="assets/mycss/landingPage.css">
+  <link rel="stylesheet" href="assets/mycss/general.css">
+  <link rel="stylesheet" href="assets/mycss/mobile/general_mobile.css">
+  <link rel="stylesheet" href="assets/mycss/mobile/landingPage_mobile.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/mycss/mentores.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <!-- Navbar -->
+  <nav class="green-navbar">
+    <!-- Logótipo -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/img/logos/Logo_DM.png" alt="Logo DWDG" class="logo-img" />
+      </a>
+    </div>
+
+    <!-- Ícone de Hambúrguer -->
+    <div class="hamburger-menu">
+      <i class="fas fa-bars" id="hamburger-icon"></i>
+    </div>
+
+    <!-- Links de Navegação -->
+    <ul id="navbar-links">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#mentors">MENTORES</a></li>
+      <li><a href="#jury">JÚRI</a></li>
+      <li><a href="#partners-section">PARCEIROS</a></li>
+      <li><a href="#team">EQUIPA</a></li>
+      <li><a href="#past-editions">EDIÇÃO 2025</a></li>
+      <li><a href="#faq">FAQs</a></li>
+      <li><a href="https://share-up.pt" target="_blank">ShARE-UP</a></li>
+    </ul>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+
+
+  <div class="background" id="home">
+    <div class="hero-container">
+      <div class="info-rectangle">
+        <h1>Competição de <br>Caso de Estudo</h1>
+        <p class="hero-subtitle">Desenvolver estudantes para o impacto social</p>
+        <h3>6, 7, 8 e 11 de março | Candidaturas até 1 de março</h3>
+        <a href="comingsoon.html" class="apply-button">
+          Candidata-te
+        </a>
+
+      </div>
+      <div id="countdown">
+        <div class="countdown-item">
+          <div class="number">
+            <span id="days"></span>
+          </div>
+          <p class="label">Dias</p>
+        </div>
+        <div class="countdown-item">
+          <div class="number">
+            <span id="hours"></span>
+          </div>
+          <p class="label">Horas</p>
+        </div>
+        <div class="countdown-item">
+          <div class="number">
+            <span id="minutes"></span>
+          </div>
+          <p class="label">Minutos</p>
+        </div>
+        <div class="countdown-item">
+          <div class="number">
+            <span id="seconds"></span>
+          </div>
+          <p class="label">Segundos</p>
+        </div>
+      </div>
+    </div>
+    <img src="assets/img/torre_clergos_v3.png" alt="Tower" class="tower-image">
+  </div>
+
+  <!-- Secção ABOUT -->
+  <div class="about-section">
+    <h1>Sobre o Desafio</h1>
+    <div class="about-content">
+      <!-- Coluna do Texto -->
+      <div class="text-content" style="margin-bottom: 2em;">
+        <h3>
+          O Do Well Do Good Challenge é uma competição de caso de estudo que reúne os melhores estudantes para criar
+          soluções duradouras para problemas com impacto social.
+        </h3>
+        <h3>
+          Nesta edição, desafiamos-te a desenvolver soluções criativas para um desafio real, com acesso a todos os dados
+          e informações necessárias para uma análise aprofundada.
+        </h3>
+        <h3>
+          As melhores propostas serão selecionadas e os vencedores terão a oportunidade de desenvolver ainda mais a sua
+          solução, aprofundando o impacto e a viabilidade do projeto.
+        </h3>
+        <div class="about-grid">
+          <!-- Card 1 (Top Left) -->
+          <div class="feature-card card-pos-1">
+            <i class="fas fa-users feature-icon"></i>
+            <p>Desafia 2 ou 3 amigos a juntarem-se a ti nesta jornada.</p>
+          </div>
+
+          <!-- Card 2 (Bottom Left) -->
+          <div class="feature-card card-pos-2">
+            <i class="fas fa-graduation-cap feature-icon"></i>
+            <p>Acede a formações e trabalha com profissionais de excelência.</p>
+          </div>
+
+          <!-- Central Column (Prize Card + Language Info) -->
+          <div class="center-column card-pos-center">
+            <div class="language-info">
+              <i class="fas fa-comment-dots"></i> 100% em Português
+            </div>
+
+            <div class="feature-card prize-card">
+              <i class="fas fa-trophy feature-icon"></i>
+              <h3 class="prize-title">Habilita-te a ganhar!</h3>
+
+              <div class="prizes-list">
+                <div class="prize-item rank-1">
+                  <span class="rank">1º Lugar</span>
+                  <span class="amount">1000€</span>
+                </div>
+                <div class="prize-sub-container">
+                  <div class="prize-item rank-2">
+                    <span class="rank">2º</span>
+                    <span class="amount">250€</span>
+                  </div>
+                  <div class="prize-item rank-3">
+                    <span class="rank">3º</span>
+                    <span class="amount">100€</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 (Top Right) -->
+          <div class="feature-card card-pos-3">
+            <i class="fas fa-hand-holding-heart feature-icon"></i>
+            <p>Ganha a oportunidade de implementar a tua solução no mundo real.</p>
+          </div>
+
+          <!-- Card 4 (Bottom Right) -->
+          <div class="feature-card card-pos-4">
+            <i class="fas fa-lightbulb feature-icon"></i>
+            <p>Aprende a fazer bem e a fazer o bem. Torna-te um agente de mudança!</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Secção Como funciona -->
+  <div class="howto-section">
+    <h1>Como funciona?</h1>
+    <p style="font-size: 1.17em; font-weight: normal; margin: 1em 0;">
+      O Do Well Do Good Challenge é mais do que uma competição de caso de estudo. <br>
+      Através de formações de excelência, mentoria personalizada e oportunidades únicas de networking, os participantes
+      são desafiados a desenvolver soluções com impacto real, contribuindo para um futuro mais sustentável. <br>
+      As melhores propostas terão a oportunidade de ser aprofundadas e transformadas em ações concretas, promovendo a
+      inovação e a criação de valor.
+      <br>
+      <br>
+      O concurso está dividido em 4 etapas:
+    </p>
+    <div class="timeline-container">
+      <svg id="timeline-svg"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;"></svg>
+      <!-- Step 1 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+        <div class="timeline-content">
+          <img src="assets/img/about/formacoes.png" alt="Formações" class="timeline-img" />
+          <h3 class="timeline-title">Formações</h3>
+          <p class="timeline-desc">Formação ministrada por uma consultora e outra pela empresa Main Sponsor do evento em
+            temas relacionados com o caso prático</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-puzzle-piece"></i></div>
+        <div class="timeline-content">
+          <img src="assets/img/about/resolucao.png" alt="Resolução de Caso Prático" class="timeline-img" />
+          <h3 class="timeline-title">Resolução de Caso Prático</h3>
+          <p class="timeline-desc">Maratona de 36 horas para resolver o caso prático, com o apoio de um programa de
+            mentoria especialmente desenhado para cada equipa</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-microphone-alt"></i></div>
+        <div class="timeline-content">
+          <img src="assets/img/about/final.png" alt="Apresentações Finais" class="timeline-img" />
+          <h3 class="timeline-title">Apresentações Finais</h3>
+          <p class="timeline-desc">Os nossos mentores selecionarão as 6 melhores equipas, que terão a oportunidade de
+            apresentar as suas soluções a um painel de jurados</p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-rocket"></i></div>
+        <div class="timeline-content">
+          <img src="assets/img/about/solucao.png" alt="Desenvolvimento da Solução" class="timeline-img" />
+          <h3 class="timeline-title">Desenvolvimento da Solução</h3>
+          <p class="timeline-desc">Os vencedores terão a oportunidade de trabalhar em estreita colaboração com os nossos
+            parceiros para desenvolver e implementar a sua solução.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Secção Mentores -->
+  <div class="mentors-section" id="mentors">
+    <h1 style="color: #01301F; text-align: center; padding: 50px 20px; font-size: 2rem; margin-bottom: 0;">Mentores</h1>
+    <h3 style="color: #01301F; text-align: center; margin-bottom: 50px;">Em breve!</h3>
+  </div>
+
+
+
+  <!-- Secção Júri -->
+  <div id="jury" style="text-align: center; padding: 50px 20px;">
+    <h1 style="color: #01301F; font-size: 2rem;">Júri</h1>
+    <h3 style="color: #01301F;">Em breve!</h3>
+  </div>
+
+
+
+
+  <br><br><br>
+
+
+  <br><br><br>
+  <br><br><br>
+  <!-- Secção Parceiros -->
+  <div id="partners-section" style="text-align: center; padding: 50px 20px;">
+    <h1 style="color: #01301F; font-size: 2rem;">Parceiros</h1>
+    <h3 style="color: #01301F;">Em breve!</h3>
+  </div>
+
+  <!-- Secção Equipa -->
+  <div id="team" style="text-align: center; padding: 50px 20px; background-color: #f9f9f9;">
+    <h1 style="color: #01301F; font-size: 2rem;">Equipa</h1>
+
+    <!-- DWDG Coordinator -->
+    <div class="team-group" style="margin-bottom: 40px;">
+      <h3 style="color: #01301F; margin-bottom: 20px;">Coordenador DWDG</h3>
+      <div class="team-grid" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <div class="polaroid">
+          <div class="photo-container img-zoom-xs-custom">
+            <a href="https://www.linkedin.com/in/gon%C3%A7alo-gomes-723668329/" target="_blank"
+              class="linkedin-photo-link">
+              <img src="assets/img/team/coordinator.png" alt="Gonçalo Bonito">
+              <div class="hover-overlay">
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </a>
+          </div>
+          <div class="description">
+            <strong>Gonçalo Bonito</strong>
+            <!-- Link removed from text as requested to move interaction to photo -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Equipa de Marketing -->
+    <div class="team-group" style="margin-bottom: 40px;">
+      <h3 style="color: #01301F; margin-bottom: 20px;">Equipa de Marketing</h3>
+      <div class="team-grid" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <div class="polaroid">
+          <div class="photo-container img-zoom-sm">
+            <a href="https://www.linkedin.com/in/luana-santos-505a90261/" target="_blank" class="linkedin-photo-link">
+              <img src="assets/img/team/mkt1.png" alt="Luana Santos">
+              <div class="hover-overlay">
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </a>
+          </div>
+          <div class="description">
+            <strong>Luana Santos</strong>
+          </div>
+        </div>
+        <div class="polaroid">
+          <div class="photo-container img-zoom-sm-plus">
+            <a href="https://www.linkedin.com/in/josepedrosantosmartins/" target="_blank" class="linkedin-photo-link">
+              <img src="assets/img/team/mkt2.png" alt="José Martins">
+              <div class="hover-overlay">
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </a>
+          </div>
+          <div class="description">
+            <strong>José Martins</strong>
+          </div>
+        </div>
+        <div class="polaroid">
+          <div class="photo-container img-zoom-custom-115">
+            <a href="https://www.linkedin.com/in/maria-fraga-200a6730a/" target="_blank" class="linkedin-photo-link">
+              <img src="assets/img/team/mkt3.png" alt="Maria Fraga">
+              <div class="hover-overlay">
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </a>
+          </div>
+          <div class="description">
+            <strong>Maria Fraga</strong>
+          </div>
+        </div>
+        <div class="polaroid">
+          <div class="photo-container img-zoom-custom-175-offset-down">
+            <a href="https://www.linkedin.com/in/in%C3%AAs-barbosa-81b7b62a8/" target="_blank"
+              class="linkedin-photo-link">
+              <img src="assets/img/team/mkt4.png" alt="Inês Barbosa">
+              <div class="hover-overlay">
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </a>
+          </div>
+          <div class="description">
+            <strong>Inês Barbosa</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Equipa de Recursos Humanos -->
+    <div class="team-group" style="margin-bottom: 40px;">
+      <h3 style="color: #01301F; margin-bottom: 20px;">Equipa de Recursos Humanos</h3>
+      <div class="team-grid" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <div class="polaroid">
+          <div class="photo-container img-zoom-sm">
+            <a href="https://www.linkedin.com/in/sara-trocado-4a7764295/" target="_blank" class="linkedin-photo-link">
+              <img src="assets/img/team/hr1.png" alt="Sara Trocado">
+              <div class="hover-overlay">
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </a>
+          </div>
+          <div class="description">
+            <strong>Sara Trocado</strong>
+          </div>
+        </div>
+        <div class="polaroid">
+          <div class="photo-container img-zoom-sm">
+            <a href="https://www.linkedin.com/in/tiago-castanheira-14b597278/" target="_blank"
+              class="linkedin-photo-link">
+              <img src="assets/img/team/hr3.png" alt="Tiago Castanheira">
+              <div class="hover-overlay">
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </a>
+          </div>
+          <div class="description">
+            <strong>Tiago Castanheira</strong>
+          </div>
+        </div>
+        <div class="polaroid">
+          <div class="photo-container img-zoom-sm-minus">
+            <a href="https://www.linkedin.com/in/miguel-fernandesegi/" target="_blank" class="linkedin-photo-link">
+              <img src="assets/img/team/hr2.png" alt="Miguel Fernandes">
+              <div class="hover-overlay">
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </a>
+          </div>
+          <div class="description">
+            <strong>Miguel Fernandes</strong>
+          </div>
+        </div>
+        <div class="polaroid">
+          <div class="photo-container img-zoom-sm-plus">
+            <a href="https://www.linkedin.com/in/guilherme-vieira-goncalves/" target="_blank"
+              class="linkedin-photo-link">
+              <img src="assets/img/team/hr4.png" alt="Guilherme Gonçalves">
+              <div class="hover-overlay">
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </a>
+          </div>
+          <div class="description">
+            <strong>Guilherme Gonçalves</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Equipa de Relações Corporativas -->
+    <div class="team-group">
+      <h3 style="color: #01301F; margin-bottom: 20px;">Equipa de Relações Corporativas</h3>
+      <div class="team-grid" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <div class="polaroid">
+          <div class="photo-container img-zoom-sm">
+            <a href="https://www.linkedin.com/in/anaritasc/" target="_blank" class="linkedin-photo-link">
+              <img src="assets/img/team/cr1.png" alt="CR Team Member 1">
+              <div class="hover-overlay">
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </a>
+          </div>
+          <div class="description">
+            <strong>Ana Rita Correia</strong>
+          </div>
+        </div>
+        <div class="polaroid">
+          <div class="photo-container img-zoom-sm">
+            <a href="https://www.linkedin.com/in/raquelsspinto/" target="_blank" class="linkedin-photo-link">
+              <img src="assets/img/team/cr3.png" alt="CR Team Member 3">
+              <div class="hover-overlay">
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </a>
+          </div>
+          <div class="description">
+            <strong>Raquel Pinto</strong>
+          </div>
+        </div>
+        <div class="polaroid">
+          <div class="photo-container img-zoom-sm">
+            <a href="https://www.linkedin.com/in/filipa-gouveia-9a198b334/" target="_blank" class="linkedin-photo-link">
+              <img src="assets/img/team/cr2.png" alt="CR Team Member 2">
+              <div class="hover-overlay">
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </a>
+          </div>
+          <div class="description">
+            <strong>Filipa Gouveia</strong>
+          </div>
+        </div>
+        <div class="polaroid">
+          <div class="photo-container img-zoom-sm">
+            <a href="https://www.linkedin.com/in/ricardo-as-ferreira/" target="_blank" class="linkedin-photo-link">
+              <img src="assets/img/team/cr4.png" alt="CR Team Member 4">
+              <div class="hover-overlay">
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </a>
+          </div>
+          <div class="description">
+            <strong>Ricardo Ferreira</strong>
+          </div>
+        </div>
+        <div class="polaroid">
+          <div class="photo-container img-zoom-sm-plus">
+            <a href="https://www.linkedin.com/in/tiagonhr/" target="_blank" class="linkedin-photo-link">
+              <img src="assets/img/team/cr5.png" alt="Tiago Neves">
+              <div class="hover-overlay">
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </a>
+          </div>
+          <div class="description">
+            <strong>Tiago Neves</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Secção Edições Anteriores -->
+  <div id="past-editions" style="text-align: center; padding: 50px 20px;">
+    <h1 style="color: #01301F; font-size: 2rem; margin-bottom: 40px;">Edição 2025</h1>
+
+
+    <h3 style="color: #01301F; font-size: 1.5rem; margin-bottom: 20px; text-align: center;">Vencedores</h3>
+    <div class="podium-gallery">
+      <!-- 2nd Place -->
+      <div class="podium-card place-2">
+        <div class="podium-image-container">
+          <img src="assets/img/past_editions/2nd_place.jpg" alt="2nd Place 2025">
+          <div class="podium-caption">
+            <h3>2º Lugar</h3>
+            <p>250€</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Winner (1st Place) -->
+      <div class="podium-card place-1">
+        <div class="podium-image-container">
+          <img src="assets/img/past_editions/winner.jpg" alt="Winner 2025">
+          <div class="podium-caption">
+            <h3>1º Lugar - Vencedores</h3>
+            <p>1000€</p>
+          </div>
+        </div>
+        <i class="fas fa-crown winner-crown"></i>
+      </div>
+
+      <!-- 3rd Place -->
+      <div class="podium-card place-3">
+        <div class="podium-image-container">
+          <img src="assets/img/past_editions/3rd_place.jpg" alt="3rd Place 2025">
+          <div class="podium-caption">
+            <h3>3º Lugar</h3>
+            <p>100€</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Event Photos Placeholder -->
+    <div class="event-photos-section" style="margin-top: 50px;">
+      <h3 style="color: #01301F; font-size: 1.5rem; margin-bottom: 20px; text-align: center;">Fotos do evento</h3>
+
+      <div class="carousel-wrapper">
+        <button class="carousel-btn prev-btn" id="prevPhotoBtn">&#10094;</button>
+
+        <div class="carousel-container" style="overflow: hidden; padding: 20px 0;">
+          <div class="carousel-track" id="photoTrack"
+            style="display: flex; transition: transform 0.5s ease-in-out; gap: 20px;">
+            <!-- Photos -->
+            <div class="photo-item"><img src="assets/img/past_editions/1_edition/photo1.jpg" alt="Event Photo 1"></div>
+            <div class="photo-item"><img src="assets/img/past_editions/1_edition/photo2.jpg" alt="Event Photo 2"></div>
+            <div class="photo-item"><img src="assets/img/past_editions/1_edition/photo3.jpg" alt="Event Photo 3"></div>
+            <div class="photo-item"><img src="assets/img/past_editions/1_edition/photo4.jpg" alt="Event Photo 4"></div>
+            <div class="photo-item"><img src="assets/img/past_editions/1_edition/photo5.png" alt="Event Photo 5"></div>
+            <div class="photo-item"><img src="assets/img/past_editions/1_edition/photo6.png" alt="Event Photo 6"></div>
+            <div class="photo-item"><img src="assets/img/past_editions/1_edition/photo7.png" alt="Event Photo 7"></div>
+            <div class="photo-item"><img src="assets/img/past_editions/1_edition/photo8.jpg" alt="Event Photo 8"></div>
+            <div class="photo-item"><img src="assets/img/past_editions/1_edition/photo9.jpg" alt="Event Photo 9"></div>
+            <div class="photo-item"><img src="assets/img/past_editions/1_edition/photo10.jpg" alt="Event Photo 10">
+            </div>
+            <div class="photo-item"><img src="assets/img/past_editions/1_edition/photo11.png" alt="Event Photo 11">
+            </div>
+            <div class="photo-item"><img src="assets/img/past_editions/1_edition/photo12.jpg" alt="Event Photo 12">
+            </div>
+            <div class="photo-item"><img src="assets/img/past_editions/1_edition/photo13.jpg" alt="Event Photo 13">
+            </div>
+            <div class="photo-item"><img src="assets/img/past_editions/1_edition/photo14.jpg" alt="Event Photo 14">
+            </div>
+            <div class="photo-item"><img src="assets/img/past_editions/1_edition/photo15.jpg" alt="Event Photo 15">
+            </div>
+            <div class="photo-item"><img src="assets/img/past_editions/1_edition/photo16.jpg" alt="Event Photo 16">
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-btn next-btn" id="nextPhotoBtn">&#10095;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ Section -->
+  <div class="faq-section" id="faq">
+    <h1>FAQs</h1>
+    <div class="faq-container">
+      <details>
+        <summary>É necessário ter experiência prévia em consultoria para participar?</summary>
+        <p>Não. O concurso foi desenhado para estudantes com interesse em consultoria,
+          independentemente da experiência prévia. Valorizamos capacidade analítica, pensamento crítico, trabalho em
+          equipa e criatividade.</p>
+      </details>
+      <details>
+        <summary>O evento é realizado em inglês?</summary>
+        <p>Não. Apesar de a organização estar inserida num contexto internacional, o Do Well Do Good Challenge é
+          realizado integralmente em português, incluindo a resolução do caso de estudo.</p>
+      </details>
+      <details>
+        <summary>Que tipo de feedback as equipas irão receber após o concurso?</summary>
+        <p>As equipas finalistas receberão feedback estruturado do júri, com identificação de pontos fortes e sugestões
+          de melhoria, contribuindo para o desenvolvimento académico e profissional dos participantes.</p>
+      </details>
+
+      <details>
+        <summary>Tenho de fazer parte da UP para participar?</summary>
+        <p>Não. A edição deste ano está aberta a todos os estudantes da Federação Académica do Porto, incluindo a
+          Universidade do Porto, Institutos Politécnicos e Universidades Privadas.
+          As equipas participantes podem incluir membros de universidades diferentes.</p>
+      </details>
+
+      <details>
+        <summary>Até quando me posso inscrever no evento?</summary>
+        <p>As inscrições para o evento estão abertas até ao dia 1 de março (inclusive). Recomendamos que te inscrevas o
+          mais cedo possível, uma vez que as vagas podem ser limitadas.</p>
+      </details>
+
+      <details>
+        <summary>Existe idade limite para participar no evento?</summary>
+        <p>Sim. A participação no evento é limitada a candidatos com idade máxima de 25 anos.</p>
+      </details>
+    </div>
+  </div>
+
+  <!-- Seção Final Call to Action -->
+  <div class="main-partner-section" id="partners-section" style="padding-top: 50px;">
+    <div class="opportunity">
+      <h1 style="text-align: center; color:#01301F;">Não Percas a tua Oportunidade!</h1>
+      <br>
+      <div class="buttons-container" style="justify-content: center;">
+        <a href="comingsoon.html" class="end-buttons">
+          Candidata-te
+        </a>
+        <a href="https://drive.google.com/file/d/1H-wLakCCWTGYQceePFmXU2TuIwEMrzwC/view" target="_blank"
+          class="end-buttons">
+          Termos e Condições
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- Footer Section -->
+  <footer id="contact" class="footer-section">
+    <div class="footer-content">
+      <img src="assets/img/logos/sharelogo_dark.png" alt="Share Logo" class="footer-logo">
+      <div class="footer-row three-columns">
+
+        <!-- Coluna 1: Informações de Contacto-->
+        <div class="footer-credits">
+          <p><strong>Informações de Contacto</strong></p>
+          <p>Email: <a href="mailto:dwdg.shareup@gmail.com">dwdg.shareup@gmail.com</a></p>
+          <p>Telefone: <a href="tel:+351919190911">+351 919 190 911</a></p>
+        </div>
+
+        <!-- Coluna 2: Contacta-nos -->
+        <div class="footer-credits">
+          <p>Copyright © ShARE-UP 2025</p>
+          <p>Designed and Developed by <a href="https://www.linkedin.com/in/maria-fraga-200a6730a/"
+              target="_blank">Maria Fraga</a> e <a href="https://www.linkedin.com/in/in%C3%AAs-barbosa-81b7b62a8/"
+              target="_blank">Inês Barbosa</a></p>
+        </div>
+
+        <!-- Coluna 3: Ícones das redes sociais -->
+        <div class="social-links">
+          <ul>
+            <li class="facebook"><a target="_blank" href="https://www.facebook.com/SHAREUniversityPorto"><i
+                  class="fab fa-facebook-f"></i></a></li>
+            <li class="instagram"><a target="_blank" href="https://www.instagram.com/dwdgchallenge/"><i
+                  class="fab fa-instagram"></i></a></li>
+            <li class="linkedin"><a target="_blank"
+                href="https://www.linkedin.com/company/share-university-of-porto/"><i
+                  class="fab fa-linkedin-in"></i></a></li>
+            <li class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCdWPIG2WbMcMWFnJTughpbg"><i
+                  class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- Link JS -->
+  <script src="assets/js/videoCarousel.js"></script>
+  <script src="assets/js/scrollEffect.js"></script>
+  <script src="assets/js/countdown.js"></script>
+  <script src="assets/js/menuhamburger.js"></script>
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <script src="assets/js/dynamic-effects.js"></script>
+  <script src="assets/js/mentorSlider.js"></script>
+  <script src="assets/js/timelineEffect.js"></script>
+  <script src="assets/js/photoCarousel.js"></script>
 </body>
+
 </html>

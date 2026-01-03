@@ -1,0 +1,33 @@
+{
+  "name": "multi-page",
+  "version": "0.1.0",
+  "devDependencies": {
+    "autoprefixer": "^10.4.18",
+    "browser-sync": "^2.14.0",
+    "check-node-version": "^4.2.1",
+    "cssnano": "^6.0.5",
+    "gulp": "^5.0.0",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^10.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify-es": "^3.0.0",
+    "pixrem": "^5.0.0",
+    "sass": "^1.81.0"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp generate-assets",
+    "predeploy": "check-node-version && npm install -g firebase-tools@latest"
+  },
+  "dependencies": {
+    "bootstrap-scss": "^4.4.1"
+  }
+}

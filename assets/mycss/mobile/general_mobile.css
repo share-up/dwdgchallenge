@@ -1,0 +1,250 @@
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .green-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    /* Increased width for better spacing */
+    box-sizing: border-box;
+    z-index: 3000;
+    /* Ensure navbar stays on top of other elements */
+  }
+
+  .hamburger-menu {
+    display: block;
+    order: 2;
+    /* Move o ícone para o lado oposto do logótipo */
+  }
+
+  .green-navbar ul {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100vh;
+    background-color: rgba(1, 48, 31, 1);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    /* Hidden off-screen */
+    text-align: center;
+    padding-top: 5em;
+    transition: right 0.3s ease-in-out;
+    z-index: 3001;
+    /* Higher than navbar and overlay */
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    gap: 0;
+  }
+
+  .green-navbar ul.visible {
+    right: 0;
+    /* Slide in */
+  }
+
+  .nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2500;
+    /* Between page content and navbar */
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .nav-overlay.visible {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .green-navbar ul li {
+    padding: 0;
+    /* Remove padding from li to give it to a */
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* Separator */
+  }
+
+  .green-navbar ul li a {
+    font-size: 1.2rem;
+    display: block;
+    /* Make the link fill the area */
+    width: 100%;
+    padding: 1.5em 0;
+    /* Add padding to A for touch target */
+  }
+
+  .teaser video {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .video-center {
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .two-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divider {
+    height: 4px;
+    width: 85%;
+    /* Define uma largura fixa, por exemplo, 100% do contêiner pai */
+    background-color: #B7E6CA;
+    align-self: left;
+  }
+
+  .partner-text {
+    display: none;
+  }
+
+  /* FIX CAROUSEL MOBILE */
+  .carousel-wrapper {
+    max-width: 100% !important;
+    /* Override inline 500px */
+    padding: 0 20px;
+  }
+
+  /* FIX HERO LAYOUT MOBILE */
+  .background {
+    flex-direction: column !important;
+    /* Stack text and image vertically */
+    height: auto !important;
+    /* Allow height to grow */
+    padding-top: 150px;
+    /* Space for navbar - increased */
+    align-items: center;
+    /* Center items */
+    margin-bottom: 50px;
+    /* Space before About */
+  }
+
+  .hero-container {
+    margin-top: 140px !important;
+    /* Reset desktop margin */
+    margin-left: 0 !important;
+    /* Reset desktop margin */
+    padding: 0 20px;
+    /* Add padding for mobile */
+    align-items: center !important;
+    /* Center text */
+    width: 100%;
+    /* Full width */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-rectangle {
+    width: 100% !important;
+    /* Full width */
+    text-align: center !important;
+    /* Center text */
+    padding: 0 !important;
+    margin-bottom: 20px;
+    /* Space above tower */
+  }
+
+  .info-rectangle h1 {
+    font-size: 2.5rem !important;
+    /* Slightly smaller H1 */
+  }
+
+  .info-rectangle h3 {
+    white-space: normal !important;
+    /* Allow wrapping */
+    font-size: 1.2rem !important;
+    /* Smaller text */
+    margin: 5px 0 30px 0 !important;
+    /* Reduced margins */
+    line-height: 1.4;
+  }
+
+  /* FIX TOWER SPACING */
+  /* FIX TOWER SPACING */
+  .tower-image {
+    position: relative !important;
+    /* Stop absolute positioning */
+    width: 170% !important;
+    /* Doubled size */
+    height: auto !important;
+    /* Prevent stretching */
+    margin-top: 20px;
+
+    /* Shifted Right Centering + 1cm */
+    left: auto !important;
+    transform: none !important;
+    margin-left: -5% !important;
+    /* Was -15%. Shifted right by ~10% (~1cm). */
+
+    margin-right: 0 !important;
+    margin-bottom: -70% !important;
+    /* Relaxed from -80% */
+    opacity: 0.8;
+    z-index: 0;
+  }
+
+  /* Reduce gap on container */
+  .background {
+    margin-bottom: 0 !important;
+    overflow: hidden !important;
+    position: relative;
+    padding-bottom: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  /* Force About section spacing */
+  .about-section {
+    margin-top: 50px !important;
+    /* POSITIVE margin for distance */
+    position: relative;
+    z-index: 2;
+    background: transparent !important;
+  }
+
+  /* FIX PRIZE CARD MOBILE */
+  .center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center children */
+    width: 100%;
+  }
+
+  .feature-card.prize-card {
+    transform: none !important;
+    /* Remove scaling */
+    max-width: 300px !important;
+    /* Force smaller width */
+    width: 90% !important;
+    /* Responsive width */
+    margin: 0 auto !important;
+    /* Center horizontally */
+    padding: 20px !important;
+    /* Adjust padding */
+    box-sizing: border-box;
+    /* Ensure padding doesn't break width */
+  }
+
+  .feature-card.prize-card .feature-icon {
+    font-size: 4rem !important;
+    /* Slightly smaller icon */
+  }
+
+  /* Orphan properties commented out to fix lint errors
+  width: 100% !important;
+  margin-left: 0 !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  */
+}
