@@ -1502,3 +1502,215 @@ details p {
   /* Larger icon */
   animation: pulseIcon 2s infinite;
 }
+
+/* Sponsors Section Styling */
+#partners-section {
+  padding: 100px 20px !important;
+  position: relative;
+  overflow: hidden;
+  background-color: #fafafa;
+}
+
+#partners-section::after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background-image: radial-gradient(#00C782 2px, transparent 2px);
+  background-size: 20px 20px;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.sponsors-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sponsors-tier {
+  margin-bottom: 80px;
+}
+
+.sponsors-tier h2 {
+  color: #01301F;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.sponsors-tier h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: #00C782;
+  border-radius: 2px;
+}
+
+.sponsors-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.sponsor-item {
+  background: #FFFFFF;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 180px;
+  border: 1px solid #f0f0f0;
+  overflow: hidden;
+}
+
+.sponsor-item:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(0, 199, 130, 0.15);
+  border-color: rgba(0, 199, 130, 0.4);
+}
+
+.sponsor-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.sponsor-item:hover .sponsor-logo {
+  transform: scale(1.08);
+}
+
+/* Gold Tier Specifics */
+.gold-sponsor {
+  background: linear-gradient(135deg, #ffffff 0%, #fffef5 100%);
+  border: 1px solid rgba(255, 215, 0, 0.15);
+}
+
+.gold-sponsor:hover {
+  border-color: rgba(255, 215, 0, 0.5);
+}
+
+/* Main Sponsor Specifics */
+.main-sponsor {
+  width: 450px;
+  height: 250px;
+  padding: 40px;
+  background: #ffffff;
+  border: 2px solid #00C782;
+  box-shadow: 0 15px 40px rgba(0, 199, 130, 0.1);
+}
+
+.main-sponsor:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0, 199, 130, 0.25);
+}
+
+.main-sponsor .sponsor-logo {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* Gold Tier Specifics */
+.gold-sponsor {
+  background: linear-gradient(135deg, #ffffff 0%, #fffef5 100%);
+  border: 1px solid rgba(255, 215, 0, 0.15);
+}
+
+.gold-sponsor:hover {
+  border-color: rgba(255, 215, 0, 0.5);
+}
+
+/* Silver Tier Specifics */
+.silver-sponsor {
+  width: 260px;
+  height: 160px;
+  border: 1px solid rgba(192, 192, 192, 0.2);
+}
+
+.silver-sponsor:hover {
+  border-color: rgba(192, 192, 192, 0.6);
+  box-shadow: 0 15px 35px rgba(192, 192, 192, 0.2);
+}
+
+/* Bronze Tier Specifics */
+.bronze-sponsor {
+  width: 220px;
+  height: 130px;
+  padding: 15px;
+  border: 1px solid rgba(205, 127, 50, 0.1);
+}
+
+.bronze-sponsor:hover {
+  border-color: rgba(205, 127, 50, 0.4);
+  box-shadow: 0 10px 25px rgba(205, 127, 50, 0.15);
+}
+
+/* Supporters Specifics */
+.supporter-item {
+  width: 180px;
+  height: 110px;
+  padding: 10px;
+  background: transparent;
+  box-shadow: none;
+  border: 1px solid #f0f0f0;
+}
+
+.supporter-item:hover {
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transform: translateY(-5px);
+}
+
+.supporter-item .sponsor-logo {
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.supporter-item:hover .sponsor-logo {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .main-sponsor {
+    width: 320px;
+    height: 180px;
+    padding: 25px;
+  }
+
+  .silver-sponsor,
+  .bronze-sponsor,
+  .supporter-item {
+    width: 200px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sponsor-item {
+    width: 250px;
+    height: 150px;
+    padding: 20px;
+  }
+
+  .sponsors-tier h2 {
+    font-size: 1.5rem;
+  }
+}

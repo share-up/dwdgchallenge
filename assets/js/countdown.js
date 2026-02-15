@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Configurar a data de destino
-    const targetDate = new Date("2026-03-06T23:59:59").getTime();
+    const targetDate = new Date("2026-03-01T23:59:59").getTime();
   
     // Atualizar o contador a cada segundo
     const countdownInterval = setInterval(function () {
