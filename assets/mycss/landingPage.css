@@ -98,16 +98,15 @@ body {
   border: none;
   font-size: 1.5rem;
   font-weight: bold;
-  cursor: pointer;
+  cursor: default;
+  /* Changed from pointer */
   border-radius: 8px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .apply-button:hover {
-  background-color: #01301F;
-  color: white;
-  border: 1px solid #01301F;
+  /* Hover effect removed as it is no longer a link */
 }
 
 /* Contador */
@@ -1225,15 +1224,22 @@ body {
   border: none;
   font-size: 1rem;
   font-weight: bold;
-  cursor: pointer;
+  cursor: default;
+  /* Changed from pointer for Candidata-te */
   border-radius: 10px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .end-buttons:hover {
+  /* Hover effect will now be handled individually where needed */
+}
+
+/* Ensure 'Termos e Condições' still feels like a link */
+a.end-buttons:hover {
   background-color: #00C782;
   color: #F9F6EE;
+  cursor: pointer;
 }
 
 .tower-image {
