@@ -1566,14 +1566,16 @@ details p {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 120px;
+  /* Increased significantly to prevent overlap from scaled logos */
   flex-wrap: wrap;
 }
 
 /* Sponsors Section Refined */
 .sponsor-item {
   background: transparent !important;
-  padding: 30px;
+  padding: 10px;
+  /* Reduced from 30px */
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   display: flex;
   align-items: center;
@@ -1592,13 +1594,18 @@ details p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
-  height: 80%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.4) 50%, transparent 80%);
+  width: 90%;
+  /* Increased from 80% */
+  height: 90%;
+  /* Increased from 80% */
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 60%, transparent 90%);
+  /* Softer gradient */
   z-index: -1;
   border-radius: 50%;
+  /* Restore circular look to match mobile */
   transition: all 0.4s ease;
-  filter: blur(15px);
+  filter: blur(20px);
+  /* Increased blur */
   pointer-events: none;
 }
 
@@ -1607,10 +1614,10 @@ details p {
 }
 
 .sponsor-item:hover::before {
-  background: radial-gradient(circle, rgba(0, 199, 130, 0.4) 0%, rgba(0, 199, 130, 0.2) 60%, transparent 90%);
-  width: 120%;
-  height: 120%;
-  filter: blur(20px);
+  background: radial-gradient(circle, rgba(0, 199, 130, 0.3) 0%, rgba(0, 199, 130, 0.1) 60%, transparent 90%);
+  width: 100%;
+  height: 100%;
+  filter: blur(25px);
 }
 
 .sponsor-item a {
@@ -1642,7 +1649,8 @@ details p {
 .main-sponsor {
   width: 450px;
   height: 250px;
-  padding: 40px;
+  padding: 20px;
+  /* Reduced from 40px */
 }
 
 .main-sponsor::before {
@@ -1650,22 +1658,32 @@ details p {
 }
 
 .gold-sponsor {
-  width: 280px;
-  height: 160px;
-  padding: 25px;
+  width: 300px;
+  /* Increased from 280px */
+  height: 180px;
+  padding: 10px;
+  /* Reduced padding to allow more logo space */
+}
+
+.gold-sponsor .sponsor-logo {
+  transform: scale(1.1);
+  /* Slight boost for Porto and others */
 }
 
 .silver-sponsor {
-  width: 230px;
-  height: 140px;
+  width: 260px;
+  /* Reduced from 300px */
+  height: 150px;
 }
 
 .silver-sponsor .sponsor-logo {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  /* Reduced from 1.4 */
 }
 
 .silver-sponsor:hover .sponsor-logo {
-  transform: scale(1.2);
+  transform: scale(1.3);
+  /* Reduced from 1.5 */
 }
 
 
@@ -1674,8 +1692,13 @@ details p {
   height: 130px;
 }
 
+.bronze-sponsor .sponsor-logo {
+  transform: scale(1.2);
+}
+
 .ach-brito-logo .sponsor-logo {
-  transform: scale(1.6);
+  transform: scale(2.0);
+  /* Increased from 1.6 */
 }
 
 
@@ -1687,72 +1710,91 @@ details p {
 .supporter-item .sponsor-logo {
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
   opacity: 1;
-  transform: scale(1.4);
+  transform: scale(1.6);
+  /* Increased from 1.4 */
 }
 
 .izidoro-logo .sponsor-logo {
-  transform: scale(2.0);
+  transform: scale(2.2);
+  /* Increased from 2.0 */
 }
 
 .msm-logo .sponsor-logo {
-  transform: scale(1.1);
+  transform: scale(1.3);
+  /* Increased from 1.1 */
 }
 
 .nestle-logo .sponsor-logo {
-  transform: scale(1.0);
+  transform: scale(1.2);
+  /* Increased from 1.0 */
 }
 
 .innocent-logo .sponsor-logo {
-  transform: scale(1.3);
+  transform: scale(1.5);
+  /* Increased from 1.3 */
 }
 
 .redbull-logo .sponsor-logo {
-  transform: scale(1.6);
+  transform: scale(1.8);
+  /* Increased from 1.6 */
   mix-blend-mode: normal;
 }
 
 .redbull-logo:hover .sponsor-logo {
-  transform: scale(1.7);
+  transform: scale(1.9);
 }
 
 .wow-logo .sponsor-logo {
-  transform: scale(1.2);
+  transform: scale(1.6);
+  /* Increased from 1.4 */
   mix-blend-mode: normal;
   display: block;
   width: 100%;
 }
 
 .wow-logo:hover .sponsor-logo {
-  transform: scale(1.3);
-  filter: drop-shadow(0 0 25px rgba(0, 199, 130, 1));
-}
-
-.supporter-item:hover .sponsor-logo {
-  transform: scale(1.5);
-  filter: drop-shadow(0 0 25px rgba(0, 199, 130, 1));
-}
-
-.izidoro-logo:hover .sponsor-logo {
-  transform: scale(2.1);
-  filter: drop-shadow(0 0 25px rgba(0, 199, 130, 1));
-}
-
-.ach-brito-logo:hover .sponsor-logo {
   transform: scale(1.7);
   filter: drop-shadow(0 0 25px rgba(0, 199, 130, 1));
 }
 
+.supporter-item:hover .sponsor-logo {
+  transform: scale(1.7);
+  filter: drop-shadow(0 0 25px rgba(0, 199, 130, 1));
+}
+
+.izidoro-logo:hover .sponsor-logo {
+  transform: scale(2.3);
+  filter: drop-shadow(0 0 25px rgba(0, 199, 130, 1));
+}
+
+.ach-brito-logo:hover .sponsor-logo {
+  transform: scale(2.1);
+  filter: drop-shadow(0 0 25px rgba(0, 199, 130, 1));
+}
+
 .nestle-logo:hover .sponsor-logo {
-  transform: scale(1.1);
+  transform: scale(1.3);
   filter: drop-shadow(0 0 25px rgba(0, 199, 130, 1));
 }
 
 .innocent-logo:hover .sponsor-logo {
-  transform: scale(1.4);
+  transform: scale(1.6);
   filter: drop-shadow(0 0 25px rgba(0, 199, 130, 1));
 }
 
 @media screen and (max-width: 768px) {
+  .sponsors-grid {
+    gap: 60px;
+    /* Increased to prevent overlap on mobile */
+  }
+
+  .sponsor-item::before {
+    border-radius: 50%;
+    /* Restore circular look for mobile */
+    width: 80%;
+    height: 80%;
+  }
+
   .main-sponsor {
     width: 320px;
     height: 180px;
@@ -1767,5 +1809,46 @@ details p {
     width: 200px;
     height: 120px;
     padding: 15px;
+  }
+
+  /* Restore previous scales for mobile */
+  .silver-sponsor .sponsor-logo {
+    transform: scale(1.1);
+  }
+
+  .bronze-sponsor .sponsor-logo {
+    transform: scale(1.0);
+  }
+
+  .ach-brito-logo .sponsor-logo {
+    transform: scale(1.6);
+  }
+
+  .supporter-item .sponsor-logo {
+    transform: scale(1.4);
+  }
+
+  .izidoro-logo .sponsor-logo {
+    transform: scale(2.0);
+  }
+
+  .msm-logo .sponsor-logo {
+    transform: scale(1.1);
+  }
+
+  .nestle-logo .sponsor-logo {
+    transform: scale(1.0);
+  }
+
+  .innocent-logo .sponsor-logo {
+    transform: scale(1.3);
+  }
+
+  .redbull-logo .sponsor-logo {
+    transform: scale(1.6);
+  }
+
+  .wow-logo .sponsor-logo {
+    transform: scale(1.2);
   }
 }
