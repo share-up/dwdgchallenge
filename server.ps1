@@ -1,5 +1,5 @@
 $port = 8080
-$root = "c:\DWDG"
+$root = "c:\Users\Utilizador\Documents\GitHub\dwdgchallenge"
 $listener = [System.Net.Sockets.TcpListener]::new([System.Net.IPAddress]::Any, $port)
 $listener.Start()
 
