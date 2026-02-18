@@ -1744,12 +1744,12 @@ details p {
 .wow-logo .sponsor-logo {
   transform: scale(1.6);
   mix-blend-mode: normal;
-  /* Removed width: 100% and display: block to fix centering */
+  transform-origin: center;
 }
 
 .uptec-logo .sponsor-logo {
   transform: scale(1.6);
-  /* Boosted to match Regueiro more closely */
+  transform-origin: center;
 }
 
 .wow-logo:hover .sponsor-logo {
@@ -1849,11 +1849,14 @@ details p {
   }
 
   .wow-logo .sponsor-logo {
-    transform: scale(1.4);
+    transform: scale(1.1);
     width: auto;
+    max-width: 100%;
   }
 
   .uptec-logo .sponsor-logo {
-    transform: scale(1.4);
+    transform: scale(1.2);
+    width: auto;
+    max-width: 100%;
   }
 }
