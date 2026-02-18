@@ -98,15 +98,16 @@ body {
   border: none;
   font-size: 1.5rem;
   font-weight: bold;
-  cursor: default;
-  /* Changed from pointer */
+  cursor: pointer;
   border-radius: 8px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .apply-button:hover {
-  /* Hover effect removed as it is no longer a link */
+  background-color: #01301F;
+  color: white;
+  border: 1px solid #01301F;
 }
 
 /* Contador */
@@ -1224,15 +1225,16 @@ body {
   border: none;
   font-size: 1rem;
   font-weight: bold;
-  cursor: default;
-  /* Changed from pointer for Candidata-te */
+  cursor: pointer;
+  /* Restored pointer */
   border-radius: 10px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .end-buttons:hover {
-  /* Hover effect will now be handled individually where needed */
+  background-color: #00C782;
+  color: #F9F6EE;
 }
 
 /* Ensure 'Termos e Condições' still feels like a link */
@@ -1517,18 +1519,7 @@ details p {
   background-color: #fafafa;
 }
 
-#partners-section::after {
-  content: '';
-  position: absolute;
-  top: -50px;
-  right: -50px;
-  width: 200px;
-  height: 200px;
-  background-image: radial-gradient(#00C782 2px, transparent 2px);
-  background-size: 20px 20px;
-  opacity: 0.15;
-  pointer-events: none;
-}
+
 
 .sponsors-container {
   max-width: 1200px;
@@ -1752,10 +1743,13 @@ details p {
 
 .wow-logo .sponsor-logo {
   transform: scale(1.6);
-  /* Increased from 1.4 */
   mix-blend-mode: normal;
-  display: block;
-  width: 100%;
+  /* Removed width: 100% and display: block to fix centering */
+}
+
+.uptec-logo .sponsor-logo {
+  transform: scale(1.6);
+  /* Boosted to match Regueiro more closely */
 }
 
 .wow-logo:hover .sponsor-logo {
@@ -1855,6 +1849,11 @@ details p {
   }
 
   .wow-logo .sponsor-logo {
-    transform: scale(1.2);
+    transform: scale(1.4);
+    width: auto;
+  }
+
+  .uptec-logo .sponsor-logo {
+    transform: scale(1.4);
   }
 }
