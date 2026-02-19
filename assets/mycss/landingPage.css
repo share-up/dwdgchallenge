@@ -1749,6 +1749,16 @@ details p {
   transform-origin: center;
 }
 
+.deloitte-logo .sponsor-logo {
+  transform: scale(1.1);
+  mix-blend-mode: normal;
+}
+
+.deloitte-logo:hover .sponsor-logo {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 25px rgba(0, 199, 130, 0.6));
+}
+
 .wow-logo:hover .sponsor-logo {
   transform: scale(1.7);
   filter: drop-shadow(0 0 25px rgba(0, 199, 130, 1));
@@ -1850,5 +1860,9 @@ details p {
     transform: scale(1.2);
     width: auto;
     max-width: 100%;
+  }
+
+  .deloitte-logo .sponsor-logo {
+    transform: scale(1.0);
   }
 }
