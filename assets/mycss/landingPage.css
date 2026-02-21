@@ -1759,6 +1759,15 @@ details p {
   filter: drop-shadow(0 0 25px rgba(0, 199, 130, 0.6));
 }
 
+.panike-logo .sponsor-logo {
+  transform: scale(2.1);
+}
+
+.panike-logo:hover .sponsor-logo {
+  transform: scale(1.5);
+  filter: drop-shadow(0 0 25px rgba(0, 199, 130, 0.6));
+}
+
 .wow-logo:hover .sponsor-logo {
   transform: scale(1.7);
   filter: drop-shadow(0 0 25px rgba(0, 199, 130, 1));
@@ -1864,5 +1873,9 @@ details p {
 
   .deloitte-logo .sponsor-logo {
     transform: scale(1.0);
+  }
+
+  .panike-logo .sponsor-logo {
+    transform: scale(1.6);
   }
 }
