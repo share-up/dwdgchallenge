@@ -1860,7 +1860,7 @@ details p {
   }
 
   .wow-logo .sponsor-logo {
-    transform: scale(1.4) translateX(-3%);
+    transform: scale(1.4) translateX(10%);
     width: auto;
     max-width: 100%;
     display: block;
