@@ -1739,7 +1739,7 @@ details p {
 }
 
 .wow-logo .sponsor-logo {
-  transform: scale(1.6);
+  transform: scale(1.6) translateX(2%);
   mix-blend-mode: normal;
   transform-origin: center;
 }
@@ -1860,9 +1860,11 @@ details p {
   }
 
   .wow-logo .sponsor-logo {
-    transform: scale(1.1);
+    transform: scale(1.4) translateX(2%);
     width: auto;
     max-width: 100%;
+    display: block;
+    margin: 0 auto;
   }
 
   .uptec-logo .sponsor-logo {
@@ -1872,7 +1874,7 @@ details p {
   }
 
   .deloitte-logo .sponsor-logo {
-    transform: scale(1.0);
+    transform: scale(1.2);
   }
 
   .panike-logo .sponsor-logo {
