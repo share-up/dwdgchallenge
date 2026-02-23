@@ -1764,8 +1764,8 @@ details p {
 }
 
 .panike-logo:hover .sponsor-logo {
-  transform: scale(1.5);
-  filter: drop-shadow(0 0 25px rgba(0, 199, 130, 0.6));
+  transform: scale(2.3);
+  filter: drop-shadow(0 0 25px rgba(0, 199, 130, 1));
 }
 
 .wow-logo:hover .sponsor-logo {
