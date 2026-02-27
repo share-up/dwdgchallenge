@@ -1717,7 +1717,8 @@ details p {
 }
 
 .telepizza-logo .sponsor-logo {
-  transform: scale(1.5);
+  transform: scale(1.4);
+  mix-blend-mode: normal;
 }
 
 .msm-logo .sponsor-logo {
@@ -1797,7 +1798,7 @@ details p {
 }
 
 .telepizza-logo:hover .sponsor-logo {
-  transform: scale(1.6);
+  transform: scale(1.5);
 }
 
 .ach-brito-logo:hover .sponsor-logo {
