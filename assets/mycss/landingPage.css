@@ -1716,6 +1716,10 @@ details p {
   /* Increased from 2.0 */
 }
 
+.telepizza-logo .sponsor-logo {
+  transform: scale(1.5);
+}
+
 .msm-logo .sponsor-logo {
   transform: scale(1.3);
   /* Increased from 1.1 */
@@ -1768,6 +1772,15 @@ details p {
   filter: drop-shadow(0 0 25px rgba(0, 199, 130, 1));
 }
 
+.pans-company-logo .sponsor-logo {
+  transform: scale(1.5);
+}
+
+.pans-company-logo:hover .sponsor-logo {
+  transform: scale(1.6);
+  filter: drop-shadow(0 0 25px rgba(0, 199, 130, 1));
+}
+
 .wow-logo:hover .sponsor-logo {
   transform: scale(1.7);
   filter: drop-shadow(0 0 25px rgba(0, 199, 130, 1));
@@ -1781,6 +1794,10 @@ details p {
 .izidoro-logo:hover .sponsor-logo {
   transform: scale(2.3);
   filter: drop-shadow(0 0 25px rgba(0, 199, 130, 1));
+}
+
+.telepizza-logo:hover .sponsor-logo {
+  transform: scale(1.6);
 }
 
 .ach-brito-logo:hover .sponsor-logo {
@@ -1879,5 +1896,9 @@ details p {
 
   .panike-logo .sponsor-logo {
     transform: scale(1.6);
+  }
+
+  .pans-company-logo .sponsor-logo {
+    transform: scale(1.3);
   }
 }
